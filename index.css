@@ -2,24 +2,24 @@ body {
   background-color: hsl(225, 100%, 94%);
   font-family: "Red Hat Display", sans-serif;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
 }
-#main {
+.main {
   width: 88vw;
-  height: 80%;
   margin: auto;
   margin-top: 20px;
-  margin-bottom: 20px;
   background-color: white;
-  padding-bottom: 50px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  padding-bottom: 60px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 img {
+  width: 100%;
   max-width: 100%;
   height: auto;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 100%;
 }
 #words {
   width: 90%;
@@ -27,22 +27,96 @@ img {
 }
 h2 {
   text-transform: capitalize;
+  font-weight: 700;
+}
+.image {
+  background-color: hsl(224, 100%, 91%);
 }
 h2,
-#words > p {
+.info {
   text-align: center;
-}
-#words > p {
   line-height: 130%;
-  color: grey;
 }
-#image,
-#content {
-  border-radius: 10px;
+p {
+  color: rgb(168, 167, 167);
 }
-#plan {
+.plan {
   display: grid;
   width: 80%;
   margin: auto;
+  margin-bottom: 20px;
+  background-color: hsl(225, 100%, 98%);
   grid-template-columns: 20% 50% 30%;
+  padding: 10px;
+  border-radius: 15px;
+}
+.price {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.link,
+.payment {
+  align-self: center;
+  margin-left: 10px;
+}
+.payment {
+  padding-left: 10px;
+  position: relative;
+}
+.price {
+  line-height: 130%;
+}
+#annual {
+  color: black;
+  font-weight: 700;
+}
+.change {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+.change:hover {
+  color: hsl(245, 52%, 60%);
+  text-decoration: none;
+}
+.cancel:hover {
+  color: hsl(224, 53%, 62%);
+}
+.buttons {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 100%;
+  margin: auto;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: hsl(245, 76%, 61%);
+  color: white;
+  border: 1px solid hsl(245, 68%, 44%);
+  box-shadow: black 30px;
+  margin-bottom: 10px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  background-color: hsl(245, 48%, 56%);
+}
+.cancel {
+  justify-self: center;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  text-decoration: none;
+}
+@media (min-width: 600px) {
+  .main {
+    width: 40vw;
+  }
+}
+@media (min-width: 900px) {
+  .main {
+    width: 30vw;
+    font-size: 18px;
+  }
 }
