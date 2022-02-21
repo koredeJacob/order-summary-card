@@ -1,0 +1,48 @@
+body {
+  background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+#main {
+  width: 88vw;
+  height: 80%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  padding-bottom: 50px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#words {
+  width: 90%;
+  margin: auto;
+}
+h2 {
+  text-transform: capitalize;
+}
+h2,
+#words > p {
+  text-align: center;
+}
+#words > p {
+  line-height: 130%;
+  color: grey;
+}
+#image,
+#content {
+  border-radius: 10px;
+}
+#plan {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  grid-template-columns: 20% 50% 30%;
+}
