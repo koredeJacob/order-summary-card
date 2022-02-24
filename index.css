@@ -7,7 +7,7 @@ body {
 .main {
   width: 88vw;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 5%;
   background-color: white;
   padding-bottom: 60px;
   border-bottom-left-radius: 20px;
@@ -30,7 +30,7 @@ h2 {
   font-weight: 700;
 }
 .image {
-  background-color: hsl(224, 100%, 91%);
+  background: linear-gradient(0deg, white, hsl(224, 98%, 93%));
 }
 h2,
 .info {
@@ -38,7 +38,7 @@ h2,
   line-height: 130%;
 }
 p {
-  color: rgb(168, 167, 167);
+  color: rgb(168, 167, 166);
 }
 .plan {
   display: grid;
@@ -75,11 +75,17 @@ p {
   font-weight: 700;
 }
 .change:hover {
-  color: hsl(245, 52%, 60%);
+  color: hsl(245, 61%, 59%);
+  text-decoration: none;
+}
+.cancel {
+  justify-self: center;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
   text-decoration: none;
 }
 .cancel:hover {
-  color: hsl(224, 53%, 62%);
+  color: hsl(225, 58%, 62%);
 }
 .buttons {
   width: 80%;
@@ -101,13 +107,7 @@ button {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
 button:hover {
-  background-color: hsl(245, 48%, 56%);
-}
-.cancel {
-  justify-self: center;
-  color: hsl(224, 23%, 55%);
-  font-weight: 700;
-  text-decoration: none;
+  background-color: hsl(245, 60%, 55%);
 }
 @media (min-width: 600px) {
   .main {
@@ -116,7 +116,9 @@ button:hover {
 }
 @media (min-width: 900px) {
   .main {
+    margin-top: 20px;
     width: 30vw;
     font-size: 18px;
+    padding-bottom: 30px;
   }
 }
